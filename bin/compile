@@ -7,7 +7,7 @@ PROFILE=${BUILD_PATH}/.profile.d
 cd $BUILD_DIR
 
 echo "-----> install mecab-python"
-wget https://bootstrap.pypa.io/ez_setup.py -O - | /usr/bin/python3.4
+wget https://bootstrap.pypa.io/ez_setup.py -O - | /usr/bin/python3.4 --user
 /usr/bin/python3.4 setup.py build
 /usr/bin/python3.4 setup.py install
 
