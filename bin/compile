@@ -7,8 +7,8 @@ PROFILE=${BUILD_PATH}/.profile.d
 cd $BUILD_DIR
 
 echo "-----> install mecab-python"
-/app/.heroku/miniconda/bin/python setup.py build
-/app/.heroku/miniconda/bin/python setup.py install
+/usr/bin/python3.4 setup.py build
+/usr/bin/python3.4 setup.py install
 
 mkdir -p ${PROFILE}
 touch ${PROFILE}/mecab_python_paths.sh
