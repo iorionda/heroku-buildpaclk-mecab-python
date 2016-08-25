@@ -1,0 +1,17 @@
+#!/user/bin/env bash
+echo '-----> Installing mecab-python3 from local directory'
+BUILD_DIR=$1
+BUILD_PATH=$(cd $1 && pwd)
+PROFILE=${BUILD_PATH}/.profile.d
+
+cd $BUILD_DIR
+
+echo "-----> install mecab-python"
+python setup.py build
+python setup.py install
+
+mkdir -p ${PROFILE}
+touch ${PROFILE}/mecab_python_paths.sh
+
+echo 'export LD_LIBRARY_PATH=/app/.linuxbrew/lib' >> ${PROFILE}/mecab_python_paths.sh
+echo 'export MECAB_PATH=/app/.linuxbrew/lib/libmecab.so' >> ${PROFILE}/mecab_python_paths.sh

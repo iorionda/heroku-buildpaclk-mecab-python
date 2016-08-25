@@ -1,0 +1,8 @@
+!#/usr/bin/env bash
+
+cat << EOF
+---
+config_vars:
+  LD_LIBRARY_PATH=/app/.linuxbrew/lib
+  MECAB_PATH=/app/.linuxbrew/lib/libmecab.so
+EOF
