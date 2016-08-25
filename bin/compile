@@ -1,4 +1,4 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 echo '-----> Installing mecab-python3 from local directory'
 BUILD_DIR=$1
 BUILD_PATH=$(cd $1 && pwd)
