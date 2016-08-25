@@ -7,6 +7,8 @@ PROFILE=${BUILD_PATH}/.profile.d
 cd $BUILD_DIR
 
 echo "-----> install mecab-python"
+pip install setuptools
+
 /usr/bin/python3.4 setup.py build
 /usr/bin/python3.4 setup.py install
 
