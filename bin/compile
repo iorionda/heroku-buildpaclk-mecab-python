@@ -9,6 +9,11 @@ cd $BUILD_DIR
 
 echo "-----> install mecab-python"
 
+PYTHON_PATH=$(which python)
+echo '${PYTHON_PATH}'
+ls ${PYTHON_EXE}
+echo $?
+
 PYTHON_EXE setup.py build
 PYTHON_EXE setup.py install
 
