@@ -15,8 +15,8 @@ echo ${PYTHON_PATH}
 ls ${PYTHON_EXE}
 echo $?
 
-PYTHON_EXE setup.py build
-PYTHON_EXE setup.py install
+/app/.heroku/python/bin/python3 setup.py build
+/app/.heroku/python/bin/python3 setup.py install
 
 mkdir -p ${PROFILE}
 touch ${PROFILE}/mecab_python_paths.sh
