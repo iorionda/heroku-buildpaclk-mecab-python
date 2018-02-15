@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 echo '-----> Installing mecab-python3 from local directory'
+echo ${BUILD_DIR}
 BUILD_DIR=$1
-echo $(BUILD_DIR)
 BUILD_PATH=$(cd $1 && pwd)
 PROFILE=${BUILD_PATH}/.profile.d
 PYTHON_EXE=/app/.heroku/python/bin/python3
 
-cd $BUILD_DIR
+cd ${BUILD_DIR}
 
 echo "-----> install mecab-python"
 echo $(which python3)
@@ -15,6 +15,7 @@ PYTHON_PATH=$(which python)
 echo ${PYTHON_PATH}
 ls ${PYTHON_EXE}
 echo $?
+echo ${ls}
 cd /app/mecab-python-0.996
 echo $(pwd)
 
