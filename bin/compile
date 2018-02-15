@@ -14,6 +14,7 @@ PYTHON_PATH=$(which python)
 echo ${PYTHON_PATH}
 ls ${PYTHON_EXE}
 echo $?
+cd /app/mecab-python-0.996
 echo $(pwd)
 
 /app/.heroku/python/bin/python3 setup.py build
