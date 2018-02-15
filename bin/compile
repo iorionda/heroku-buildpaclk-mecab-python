@@ -12,7 +12,7 @@ echo "-----> install mecab-python3"
 PYTHON_PATH=$(which python3)
 PYTHON_EXE=$(which python3)
 ls
-cd ../../mecab-python-0.996
+cd mecab-python-0.996
 
 $PYTHON_EXE setup.py build
 $PYTHON_EXE setup.py install
