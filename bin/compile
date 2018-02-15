@@ -9,9 +9,9 @@ PYTHON_EXE=/app/.heroku/python/bin/python3
 cd $BUILD_DIR
 
 echo "-----> install mecab-python"
-
+echo $(which python3)
 PYTHON_PATH=$(which python)
-echo '${PYTHON_PATH}'
+echo ${PYTHON_PATH}
 ls ${PYTHON_EXE}
 echo $?
 
